@@ -96,12 +96,12 @@ function getCriticalDamage(attacker) {
 }
 
 export function getHitPower(fighter) {
-  const criticalHitChance = Math.random() * 2 + 1;
+  const criticalHitChance = Math.random() + 1;
   return fighter.attack * criticalHitChance;
 }
 
 export function getBlockPower(fighter) {
-  const dodgeChance = Math.random() * 2 + 1;
+  const dodgeChance = Math.random() + 1;
   return fighter.defense * dodgeChance;
 }
 
